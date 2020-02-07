@@ -9,16 +9,7 @@
       emailjs.init("user_kv9Bw5pHmniA5xdi1n9Jn");
    })();
 </script>
- <script type="text/javascript">
-	window.onload = function() {
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			event.preventDefault();
-			// generate the contact number value
-		
-			console.log("yes")
-			emailjs.sendForm('contact_service', 'contact_template', this);
-		});
-	}
+
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -562,21 +553,19 @@
        
         </div>
 		<script>
-			$(document).ready(()=>{
-				$('#btn').click(()=>{
-					alert("fhd");
-				})
-			})
+			
 			b=function(){
 			var template_params = {
    "reply_to": document.getElementById("name").innervalue,
    "from_name": document.getElementById("email").innervalue,
-   "to_name": document.getElementById("subject").innervalue,
+   "to_name": document.getElementById("Subject").innervalue,
    "message_html": document.getElementById("message").innervalue
 }
 var service_id = "gmail";
 var template_id = "template_4bvtuuWB";
 emailjs.send(service_id, template_id, template_params);
+console.log("sent");
+alert("send");
 
 }
 			</script>
@@ -596,7 +585,7 @@ emailjs.send(service_id, template_id, template_params);
                 <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" id="btn" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" onclick="b()" id="btn" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
             </form>
           </div>
