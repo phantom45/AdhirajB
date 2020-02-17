@@ -17,7 +17,7 @@
  @media only screen and (max-width: 600px) {
   .down{
     position: absolute;
-    top: 90vh;
+    top: 85vh;
     left: 45vw;
     float: center;
     background-color: rgb(0,0,0,0.1);
