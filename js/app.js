@@ -28,8 +28,8 @@ particlesJS('particles-js',
       "shape": {
         "type": "circle",
         "stroke": {
-          "width": 80,
-          "color": "#330000"
+          "width": 2,
+          "color": "#ffffff"
         },
         "polygon": {
           "nb_sides": 5
