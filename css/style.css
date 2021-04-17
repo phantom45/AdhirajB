@@ -9685,7 +9685,8 @@ textarea.form-control {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
   .srmlogo{
-    margin-left:160px ;
+    float: center;
+ 
   }
   .miclogo
   {
