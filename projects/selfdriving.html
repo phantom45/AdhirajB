@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>Self Driving Sim</title>
+    <!-- FILL THIS -->
+    <link rel="shortcut icon" href="?" />
+    <link rel="icon" type="image/png" href="?" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="?">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+
+    <link rel="stylesheet" href="../css/style2.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/project-template-style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Nunito&display=swap" rel="stylesheet">
+    <script src="../js/colorpicker.js"></script>
+    <script src="https://kit.fontawesome.com/3753e4a20c.js" crossorigin="anonymous"></script>
+    <script type="text/javacript" src="particles.js"></script>
+	<script type="text/javacript" src="app.js"></script>
+</head>
+
+
+<body onload="pickColor()" >
+    <!-- scripts -->
+<script src="./js/particles.js"></script>
+<script src="./js/app.js"></script>
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="../index.html" Font-family="Raleway">Adhiraj.B</a>
+	    
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="../index.html" class="nav-link"><span class="pick">Home</span></a></li>
+			  <li class="nav-item"><a href="../projects/selfdriving.html" class="nav-link"><span class="pick">Anti-viRL</span></a></li>
+			  <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" id="menu" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50"><path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17s-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15s15-6.7 15-15s-6.7-15-15-15z" fill="#ffbd39"/><path d="M33.3 26.7L25 18.4l-8.3 8.3l-1.4-1.4l9.7-9.7l9.7 9.7z" fill="#ffbd39"/><path d="M24 17h2v17h-2z" fill="#ffbd39"/></svg>
+			  </button>
+	        </ul>
+	      </div>
+	    </div>
+	</nav>
+
+    <div class="page">
+        <article>
+            <header class="title">
+
+                <h1>Self Driving Car Simulation</h1>
+                <h4>Self Driving Car using Genetic Algorithm</h4>
+                <figure>
+                    <img src="../images/nn1.gif" class="center"/>
+                </figure>
+                <div class="proj-info">
+                    <time datetime="2019-09">September 2020</time>
+                </div>
+            </header>
+
+            <div class="main-article">
+                <p><span class="pick"><a href='https://github.com/ReanSchwarzer1/Self-Driving-Car-Unity' class="btn btn-primary py-3 px-3" target="_blank">Github Repository (Unity3D)</a></span></p>
+                <p><span class="pick"><a href='https://github.com/ReanSchwarzer1/UE4-NN-Car' class="btn btn-primary py-3 px-3" target="_blank">Github Repository (Unreal Engine 4)</a></span></p>
+
+                <div class="proj-intro">
+                    <h2>Unity 3D</h2>
+                    <p>Implemented<span class="pick"> Genetic Algorithm in Unity using the "Math.net Numerics" library which is a open source library for .NET and mono.</span> It's almost similar to the implementation done in UE4, although this is entirely coded in C#. <span class="pick">The Genetic Algorithm uses distance driven from the driving line for reward (fitness) function, collision detection and current distance from driving line as inputs.</span> All simulation results are saved each time using the Newtonsoft.JSON nuget plugin for Unity.</span></p>
+                </div>
+                <iframe width="974" height="548" src="https://www.youtube.com/embed/5WCUe7dmb-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <div class="Tech-Stack">
+                    <h2>Tech Stack</h2>
+                    <ul>
+
+                        <li>Unity3D</li>
+                        <li>Math.net Numerics Library</li>
+                    </ul>
+                </div>
+
+                <div class="proj-intro">
+                    <h2>Unreal Engine 4</h2>
+                    <p>The Genetic algorithm's neural network is based on<span class="pick"> UE4's blueprints. </span> Utilizing <span class="pick">UE4's Advanced Vehicle template.</span></p>
+                </div>
