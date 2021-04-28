@@ -30,9 +30,11 @@
     <link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="./js/colorpicker.js"></script>
 	<script type="text/javacript" src="particles.js"></script>
 	<script type="text/javacript" src="app.js"></script>
   </head>
+  <body onload="pickColor()" >
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" >
 
 	<div id="particles-js"></div>
@@ -61,13 +63,12 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-			  <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-			  <li class="nav-item"><a href="#edu-section" class="nav-link"><span>Education</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-			  <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span><span class="pick">Home</span></span></a></li>
+			  <li class="nav-item"><a href="#about-section" class="nav-link"><span><span class="pick">About</span></span></a></li>
+			  <li class="nav-item"><a href="#edu-section" class="nav-link"><span><span class="pick">Education</span></span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span><span class="pick">Experience</span></span></a></li>
+	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span><span class="pick">Portfolio</span></span></a></li>
+			  <li class="nav-item"><a href="#contact-section" class="nav-link"><span><span class="pick">Contact</span></span></a></li>
 			  <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" id="menu" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50"><path d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17s-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15s15-6.7 15-15s-6.7-15-15-15z" fill="#ffbd39"/><path d="M33.3 26.7L25 18.4l-8.3 8.3l-1.4-1.4l9.7-9.7l9.7 9.7z" fill="#ffbd39"/><path d="M24 17h2v17h-2z" fill="#ffbd39"/></svg>
 			  </button>
@@ -95,7 +96,7 @@
 		          	<div class="text">
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Adhiraj Bhagawati</span></h1>
-			            <h2 class="mb-4">A Game Designer & Developer</h2>
+			            <h2 class="mb-4">A <span class="pick">Game Designer & Developer</span></h2>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
 						<li class="ftco-animate"><a href="https://www.linkedin.com/in/adhiraj-bhagawati-b86426149" target="_blank"><span class="icon-linkedin"></span></a></li>
 						<li class="ftco-animate"><a href="https://github.com/ReanSchwarzer1" target="_blank"><span class="icon-github" target="_blank"></span></a></li>
@@ -121,7 +122,7 @@
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading" >Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm an <span>XR Researcher</span> </h1>
+			            <h1 class="mb-4 mt-3">I'm an <span></span><span class="pick">XR </span>Researcher</span> </h1>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
 							<li class="ftco-animate"><a href="https://www.linkedin.com/in/adhiraj-bhagawati-b86426149" target="_blank"><span class="icon-linkedin"></span></a></li>
 							<li class="ftco-animate"><a href="https://github.com/ReanSchwarzer1" target="_blank"><span class="icon-github"></span></a></li>
@@ -147,7 +148,7 @@
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<span class="subheading" >Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm a <span>Machine Learning Enthusiast</span> </h1>
+			            <h1 class="mb-4 mt-3">I'm a <span><span class="pick">Machine Learning </span>Enthusiast</span> </h1>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
 							<li class="ftco-animate"><a href="https://www.linkedin.com/in/adhiraj-bhagawati-b86426149" target="_blank"><span class="icon-linkedin"></span></a></li>
 							<li class="ftco-animate"><a href="https://github.com/ReanSchwarzer1" target="_blank"><span class="icon-github"></span></a></li>
@@ -182,9 +183,9 @@
 		          <div class="col-md-12 heading-section ftco-animate">
 		          	<h1 class="big">About</h1>
 		            <h2 class="mb-4">About Me</h2>
-		            <p><li>Hello! My name is Adhiraj Bhagawati and I am currently pursuing a Bachelor's Degree with a major in Computer Science & a minor in Design and Innovation. <br></li>
-						<li> I have experience in Game Development / Game Design & AR & VR using Unity and Unreal Engine and have made, researched and completed several projects. Also dabbled in Data Science & related domains. <br></li>
-						<li> All of these in culmination will probably allow me (I hope so), to start-up my own Game Development Studio in the future. So, I am desperately trying to work towards my ideal self.<br></li>
+		            <p><li>Hello! My name is <span class="pick">Adhiraj Bhagawati and I am currently pursuing a Bachelor's Degree with a major in Computer Science & a minor in Design and Innovation. </span><br></li>
+						<li> I have experience in <span class="pick">Game Development / Game Design & AR & VR using Unity and Unreal Engine</span> and have made, researched and completed several projects. Also dabbled in  <span class="pick">Data Science & related domains.</span> <br></li>
+						<li> All of these in culmination will probably allow me (I hope so), to <span class="pick">start-up my own Game Development Studio in the future.</span> So, I am desperately trying to work towards my ideal self.<br></li>
 						<li> Thanks for reading this long introduction :D <br></li></p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>Name:</span> <span>Adhiraj Bhagawati</span></li>
@@ -223,8 +224,8 @@
 								<div class="row">
 
 								            <div class="col-md-6">	
-												<h3>Winter School In Artificial Intelligence (Visiting Student)</h3> 
-												<h5><span class="position" class="pick">Asia University, Taiwan</span>  
+												<h3><span class="pick">Winter School </span>In <span class="pick">Artificial Intelligence (Visiting Student)</span></h3> 
+												<h5><span class="position" class="pick">Asia University, Taiwan</span> 
 												<a href="https://www.asia.edu.tw/" target="_blank" style="text-decoration:underline">visit</a>
 												</h5>
 												<span class="date">Jan 2021 - Feb 2021</span> 
@@ -245,8 +246,8 @@
 										</div>
 										<div class="row">
 										    <div class="col-md-6">	
-											<h3>Open Studies In Introduction to Video Games Creation  </h3>
-											<h5><span class="position">Xamk - South-Eastern Finland University of Applied Sciences, Finland</span> <a href="https://www.xamk.fi/en/frontpage/" target="_blank" style="text-decoration:underline">visit</a></h5></h5><span class="date">2020 - 2021</span>
+											<h3><span class="pick">Open Studies</span> In <span class="pick">Introduction to Video Games Creation</span>  </h3>
+											<h5><span class="position">Xamk - South-Eastern Finland University of Applied Sciences, Finland</span><a href="https://www.xamk.fi/en/frontpage/" target="_blank" style="text-decoration:underline">visit</a></h5></h5><span class="date">2020 - 2021</span>
 											
 											
 											</div>
@@ -267,7 +268,7 @@
 									
 									<div class="row">	
 											<div class="col-md-6">
-											<h3>Bachelor's Degree In Computer Science with Minor in Design and Innovation</h3>
+											<h3><span class="pick">Bachelor's Degree</span> In <span class="pick">Computer Science with Minor in Design and Innovation</span></h3>
 											<h5><span class="position">SRM Institute Of Science And Technology</span> <a href="https://www.srmist.edu.in/" target="_blank" style="text-decoration:underline">visit</a></h5> <span class="date">2018 - 2022</span>
 											</div>
 											<div class="col-md-6" style="display:flex;justify-content:center">
@@ -290,7 +291,7 @@
     			<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
 						<span class="date">March 2021 - Present</span><img src="./images/bladez.jpg" width="200" height="100" class="aiseclogo">
-						<h2>Junior Game Designer (Intern)  
+						<h2><span class="pick">Junior Game Designer</span> with <span class="pick">Unreal Engine 4 (Intern)</span>  
 						</h2>
 						<span class="position">BladeZ Studios, Delaware, US</span>  <a href="https://www.bladezstudios.com/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
 						<p class="mt-4">Currently working as a Game Designer/Developer on the studios upcoming Android/iOS titles</br>
@@ -303,7 +304,7 @@
 
 		 <div class="resume-wrap ftco-animate">
 			<span class="date">April 2021 - Present</span><img src="./images/upkey.png" width="100" height="100" class="unlogo">
-			<h2>Spring Intern 
+			<h2><span class="pick">Spring Intern</span> 
 			</h2>
 			<span class="position">Upkey, Chicago, Illinois</span> 	<a href="https://upkey.com/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
 			<p class="mt-4">To be filled up...</br>
@@ -313,7 +314,7 @@
     		
 						<div class="resume-wrap ftco-animate">
     					<span class="date">Jan 2020 - Present</span><img src="./images/microsoft.png" class="aieseclogo">
-    					<h2>Microsoft Learn Student Ambassador</h2>
+    					<h2><span class="pick">Microsoft Learn Student Ambassador</span></h2>
     					<span class="position">Microsoft</span>  <a href="https://studentambassadors.microsoft.com/en-US/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
 							<p class="mt-4"><li>Microsoft Learn Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities, and develop technical and career skills for the future<br></li>
 								<li>Working alongside Microsoft professionals & receiving insider training, exposure to career opportunities, & access to the latest technology events<br></li>
@@ -323,7 +324,7 @@
 					</div>
     				<div class="resume-wrap ftco-animate">
     					<span class="date">Aug 2018 - Sep 2018</span><img src="./images/webarch.png" class="unlogo"> 
-    					<h2>UX / UI Designer & 3D-Modelling (Blender)</h2>
+    					<h2><span class="pick">UX / UI Designer</span> & <span class="pick">3D-Modelling (Blender)</span></h2>
     					<span class="position">WebArch</span>   <a href="https://webarchsrm.com/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
     					<p class="mt-4"><li>Worked on 3D assets and models<br></li>
 							<li>Did work on special effects in the club's videos<br></li>
@@ -332,7 +333,7 @@
 						</div>
 						<div class="resume-wrap ftco-animate">
     					<span class="date">Nov 2019 - Feb 2020</span><img src="./images/bonegame.png" class="unlogo"> 
-    					<h2>Game Designer With Unity ( Intern )</h2>
+    					<h2><span class="pick">Game Designer</span> With <span class="pick">Unity 3D ( Intern )</span></h2>
     					<span class="position">Bone Game Studios</span>   
 							<p class="mt-4"><li>Responsible for the creation and synthesis of two GDDs for two games<br></li>
 								<li>All game mechanics, UI, level design were done by me<br></li>
@@ -340,7 +341,7 @@
     				
 					<div class="resume-wrap ftco-animate">
     					<span class="date">Sep 2018 - Present</span><img src="./images/nextech.jpg" class="unlogo" width="100" height="100"> 
-    					<h2>Board Member & Student Researcher</h2>
+    					<h2><span class="pick">Board Member</span> & <span class="pick">Student Researcher</span></h2>
     					<span class="position">Next Tech Lab</span> <a href="https://www.nexttechlab.io/achievements" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
     					<p class="mt-4"><li>The lab won the Silver prize for Student-led Innovation award (2018) by QS Reimagine Education and the Wharton School of Business<br></li>
 							<li>Working on multi-disciplinary projects spanning game design, machine learning, AR/VR, and healthcare<br></li>
@@ -349,7 +350,7 @@
 					</div>
 					<div class="resume-wrap ftco-animate">
     					<span class="date">Sep 2019 - Dec 2020</span><img src="./images/novoarte.png" class="unlogo">
-    					<h2>Founder</h2>
+    					<h2><span class="pick">Founder</span></h2>
     					<span class="position">Novoartè</span>   <a href="https://www.linkedin.com/company/novoart%C3%A8/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
     					<p class="mt-4">
 						The team of NovoArtè was comprised of design innovators from all aspects of domains including technical and non-technical. The community was based around creating a platform for the sole purpose of design sharing but we even had plans to integrate features of GitHub & Behance to make the ultimate design sharing platform.
@@ -362,7 +363,7 @@
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
     					<span class="date">Aug 2018 - Present</span><img src="./images/unity.png" class="unitylogo">
-    					<h2>Student Ambassador</h2>
+    					<h2><span class="pick">Student Ambassador</span></h2>
     					<span class="position">Unity Technologies</span>   <a href="https://unity.com/learn/student-ambassadors" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
     					<p class="mt-4"><li>A Unity Student Ambassador responsible for spreading the Unity brand around campus to students interested in Game Development and Design<br></li>
 							<li>Students are selected to become Unity Student Ambassadors based on their achievements as Unity creators and community organizers who are eager to help others learn to create with Unity as well<br></li>
@@ -373,7 +374,7 @@
 					
 							<div class="resume-wrap ftco-animate">
 								<span class="date">May 2020 - July 2020</span><img src="./images/logo2.png" class="unitylogo"> 
-								<h2>Machine Learning & IIOT Trainee</h2>	
+								<h2><span class="pick">Machine Learning & IIOT</span> Trainee</h2>	
 								<span class="position">National Instruments & Cognibot.ai</span>   <a href="https://www.ni.com/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
 								<p class="mt-4"><li>Research study on applications of Artificial Intelligence, Machine Learning, Deep Learning and their implementation on NI IIOT devices and for areas such as health care, retail, manufacturing and banking<br></li>
 								<li>Participation and training along other interns in various in-class and competitive kaggle competitions<br></li>
@@ -382,7 +383,7 @@
 
     				<div class="resume-wrap ftco-animate">
     					<span class="date">Sep 2019 - Nov 2019</span><img src="./images/street.png" class="streetlogo">
-    					<h2>Game Developer With Unity ( Intern )</h2>
+    					<h2><span class="pick">Game Developer</span> With <span class="pick">Unity 3D ( Intern )</span></h2>
     					<span class="position">Street Lamp Games, Hyderabad</span>  <a href="https://www.streetlampgames.com/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
 						<p class="mt-4"><li>Worked on a hyper-casual game titled "See-Saw Roads"<br></li>
 										<li>Worked on level design, movement controller, and game mechanics<br></li>
@@ -391,7 +392,7 @@
     				</div>
     				<div class="resume-wrap ftco-animate">
     					<span class="date">Jan 2019 - Dec 2019</span></span><img src="./images/neuro.png" class="unlogo">
-    					<h2>Content Writer</h2>
+    					<h2><span class="pick">Content Writer</span></h2>
     					<span class="position">NEURONERDZ</span>  <a href="https://neuronerdz.com/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
 						<p class="mt-4"><li>Wrote tech and game design articles<br></li>
 										<li>Responsible for editing and supervising the writers under my jurisdiction<br></li>
@@ -399,7 +400,7 @@
 					</div>
 					<div class="resume-wrap ftco-animate">
 						<span class="date">Jul 2020 - July 2021</span><img src="./images/srmacmsigchi.jpg" width="200" height="100" >
-						<h2>Vice Chair</h2>
+						<h2><span class="pick">Vice Chair</span></h2>
 						<span class="position">SRM ACM SIGCHI Student Chapter</span>    <a href="https://srmacm.github.io/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
 					<p class="mt-4"><li>The Vice Chairperson should be familiar with the duties and responsibilities of the Chairperson, and of the other elected officers and committee chairpersons<br></li>
 						<li> I am also responsible for overseeing the activities and progress of the various committee and chapter programs<br></li>
@@ -409,7 +410,7 @@
 					
 						<div class="resume-wrap ftco-animate">
     					<span class="date">Oct 2020 - Dec 2020</span><img src="./images/sserd.png" width="200" height="100">
-    					<h2>Research & Development Intern</h2>
+    					<h2><span class="pick">Research & Development Intern</span></h2>
     					<span class="position">SSERD (Society for Space Education Research and Development), Bengaluru</span>  <a href="https://www.sserd.org/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a> <a href="https://drive.google.com/file/d/1ayYnSNmMOWCv3iJq6lBbKJcVbIS-rx1_/view?usp=sharing" target="_blank" class="btn btn-primary py-2 px-2">Report</a>
 						<p class="mt-4">Researched and worked under the mentorship of Prof. Sundar M N (DST-INSPIRE Fellow) & Pavan Kumar (PHD Student at IMT School for Advanced Studies Lucca, Italy) on the following problem statement:</br>
 						"Analysis, computation, modelling & research on ghost mass values of three systems, Cygnus X-1, LMC X-3, and GROJ1655-40."</br>
@@ -420,7 +421,7 @@
 					</div>
 					<div class="resume-wrap ftco-animate">
     					<span class="date">Nov 2019 - Jan 2020</span><img src="./images/aiesec.png" class="aieseclogo">
-    					<h2>Global Marketing Intern ( GV )</h2>
+    					<h2><span class="pick">Global Marketing Intern ( GV )</span></h2>
     					<span class="position">AIESEC In Egypt & OBS Software, Cairo, Egypt</span></li>   <a href=" https://aiesec.org/" target="_blank" class="btn btn-primary py-2 px-2">Visit</a>
 						<p class="mt-4"><li> GV is a cross-cultural experience for youth who want to gain personal development and leave an impact on the world <br></li>
 							<li>Worked with OBS Software Solutions & other Egyptian Tech Startups for the betterment of the economy of the IT Industry of Egypt and contribute cross-cultural beliefs, ideas, and work culture to the company<br></li>
@@ -433,85 +434,13 @@
 					
     			</div>
     		</div>
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1RsHnvSX47zOU86uiRP2cCZFN-WtS0x73/view?usp=sharing" target="_blank" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-    <section class="ftco-section" id="skills-section">
-    	<div class="container">
-    		<div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Skills</h1>
-						<h2 class="mb-4">My Skills</h2>
-            <p>Some of the things I am good at and, some that I am pursuing :)</p>
-          </div>
-        </div>
-    		<div class="row">
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M13 4v2.67l-1 1l-1-1V4h2m7 7v2h-2.67l-1-1l1-1H20M6.67 11l1 1l-1 1H4v-2h2.67M12 16.33l1 1V20h-2v-2.67l1-1M15 2H9v5.5l3 3l3-3V2zm7 7h-5.5l-3 3l3 3H22V9zM7.5 9H2v6h5.5l3-3l-3-3zm4.5 4.5l-3 3V22h6v-5.5l-3-3z" fill="#ffbd39"stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
-							<div class="desc">
-								<h3 class="mb-5">Game Development & Game Design</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1023"><path d="M881 321q-10-2-15-2q-37 0-64 25q-61-27-114-44q-87-28-182-46q-9-24-27-40Q504 96 546 0q126 9 231.5 73T948 241q-37 40-67 80zM417 191q-26 0-49 14q-81-60-163-102Q329 9 483 0q-39 87-63 191h-3zM70 253q34-57 86-108q68 35 141 86q-129-3-227 22zm251 40q2 31 21.5 54.5T391 379q-6 70-6 133q0 44 3 101q-22 7-39 24q-54-21-104-48q11-22 11-45q0-40-28-68t-68-28q-44 0-73 34q-42-38-75-79q9-43 27-85q122-34 282-25zM65 552q3 37 30.5 62.5T160 640q11 0 24-4q64 37 137 64v4q0 39 26.5 66.5T413 800q25 122 70 223q-100-6-189-48.5T140.5 864T38 704T0 512q0-1 1-27q28 35 64 67zm436 197q72 13 145 17q7 20 22 37q-23 105-28 204q-51 13-94 16q-47-107-73-242q18-12 28-32zm310 48q13-16 18-34q73-6 141-19q-48 94-132 163q-9-52-27-110zm-163-95q-70-4-138-18q-11-50-57-69q-4-59-4-103q0-66 6-137q2 0 5-2t4-2q39 38 68 70q87 96 148 218q-22 17-32 43zm89 130q2 0 11-1q17 61 25 121q-29 17-70 34q7-78 24-155q8 1 10 1zm-5-239q-1 2-2.5 6t-2.5 6q-63-114-148-207q-31-35-74-76q1 0 1.5-1.5l.5-1.5q84 17 161 42q47 15 103 40q-2 10-2 15q0 30 18 55q-33 63-55 122zm47 58q12-35 12-36q20-50 50-107q13 4 25 4q34 0 61-23q49 34 96 76q-6 57-24 110q-82 17-173 24q-13-32-47-48zm183-236q0-33-22-60q21-27 42-49q36 82 42 169q-33-25-64-45q2-9 2-15z" fill="#ffbd39"stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
-							<div class="desc">
-								<h3 class="mb-5">Web Design</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="5em" height="5em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M15 17l-2-2h-2l-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2zm7-3a1 1 0 0 1-2 0v-4a1 1 0 0 1 2 0v4zM4 14a1 1 0 0 1-2 0v-4a1 1 0 1 1 2 0v4z" fill="#ffbd39" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" fill-rule="nonzero"/></svg>
-							<div class="desc">
-								<h3 class="mb-5">VR Researcher</h3>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 72 72"><path fill="#9B9B9A" d="M6.808 55.158L22.07 33.412l8.59 8.59l15.983-15.981l19.077 29.854H6.28z"/><g fill="#ffbd39" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><path d="M6.808 55.158L22.07 33.412l8.59 8.59l15.983-15.981l19.077 29.854H6.28z"/><path d="M38 17.021h22.021A7.979 7.979 0 0 1 68 25v24.235H4V25a7.979 7.979 0 0 1 7.979-7.979h21.938L36 21.625l2-4.604z"/><path d="M8.208 24.125v-3H11"/><path d="M15.52 21.125h3v2.792"/><path d="M18.52 28.438v3h-2.79"/><path d="M11.208 31.438h-3v-2.792"/><circle cx="13.229" cy="26.146" r="2.021"/><path d="M62.837 26.021H40.642"/><path d="M67.859 26.021h-5.022"/><path d="M67.859 29.238h-5.022"/><path d="M67.859 32.456h-5.022"/><path d="M67.859 35.673h-5.022"/><path d="M67.859 38.891h-5.022"/><path d="M67.859 42.108h-5.022"/><path d="M67.859 45.325h-5.022"/><path d="M46.571 49.235V20.06"/></g></svg>
-							<div class="desc">
-								<h3 class="mb-5">AR Researcher</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><g fill="#ffbd39"><path d="M38 13c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M38 10c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2V8c0 1.1-2.7 2-6 2z"/><path d="M38 16c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M38 19c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M38 22c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M38 25c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M38 28c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M38 31c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M38 34c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M38 37c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M38 40c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/></g><g fill="#ffbd39"><ellipse cx="38" cy="8" rx="6" ry="2"/><path d="M38 12c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M38 15c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M38 18c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M38 21c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M38 24c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M38 27c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M38 30c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M38 33c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M38 36c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M38 39c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/></g><g fill="#FFA000"><path d="M10 19c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M10 16c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M10 22c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M10 25c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M10 28c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M10 31c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M10 34c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M10 37c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M10 40c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/></g><g fill="#FFC107"><ellipse cx="10" cy="14" rx="6" ry="2"/><path d="M10 18c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M10 21c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M10 24c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M10 27c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M10 30c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M10 33c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M10 36c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M10 39c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/></g><g fill="#FFA000"><path d="M24 28c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M24 25c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M24 31c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M24 34c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M24 37c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/><path d="M24 40c-3.3 0-6-.9-6-2v2c0 1.1 2.7 2 6 2s6-.9 6-2v-2c0 1.1-2.7 2-6 2z"/></g><g fill="#FFC107"><ellipse cx="24" cy="23" rx="6" ry="2"/><path d="M24 27c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M24 30c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M24 33c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M24 36c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/><path d="M24 39c-2.8 0-5.1-.6-5.8-1.5c-.1.2-.2.3-.2.5c0 1.1 2.7 2 6 2s6-.9 6-2c0-.2-.1-.3-.2-.5c-.7.9-3 1.5-5.8 1.5z"/></g></svg>
-							<div class="desc">
-								<h3 class="mb-5">Marketing</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="#" class="services-1">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 .04a1.743 1.743 0 0 0-.537 3.401l-.631 2.579H2.456A2.456 2.456 0 0 0 0 8.476v13.029a2.456 2.456 0 0 0 2.456 2.456h19.088c1.356 0 2.456-1.1 2.456-2.456V8.476c0-1.356-1.1-2.456-2.456-2.456h-8.403l-.616-2.575A1.743 1.743 0 0 0 11.999.04zM3.933 7.881h16.136c1.101 0 1.994.893 1.994 1.994v10.117a1.994 1.994 0 0 1-1.994 1.994H3.933a1.994 1.994 0 0 1-1.994-1.994V9.875c0-1.101.893-1.994 1.994-1.994zm3.254 2.312a4.575 4.575 0 1 0 0 9.15a4.575 4.575 0 0 0 0-9.15zm9.743 0a4.575 4.575 0 1 0 0 9.15a4.575 4.575 0 0 0 0-9.15zm-9.743 1.07a3.506 3.506 0 1 1 0 7.011a3.506 3.506 0 0 1 0-7.011zm9.743 0a3.506 3.506 0 1 1 0 7.011a3.506 3.506 0 0 1 0-7.011zm-9.743 1.663a1.843 1.843 0 1 0 0 3.686a1.843 1.843 0 0 0 0-3.686zm9.743 0a1.843 1.843 0 1 0 0 3.686a1.843 1.843 0 0 0 0-3.686zm-6.927 6.5v2.159h.706v-2.159h-.706zm1.077 0v2.159h.705v-2.159h-.705zm1.076 0v2.159h.706v-2.159h-.706zm1.077 0v2.159h.706v-2.159h-.706zm1.077.03v2.1a1.08 1.08 0 0 0 .829-1.049v-.001c0-.51-.354-.937-.829-1.05zm-4.678.028a1.08 1.08 0 0 0-.731 1.021v.001c0 .474.306.876.731 1.021v-2.043z" fill="#ffbd39"/></svg>
-							<div class="desc">
-								<h3 class="mb-5">Machine Learning</h3>
-							</div>
-						</a>
-					</div>
-				</div>
-    	</div>
-    </section>
-
-		
 
 <section class="ftco-section ftco-project" id="projects-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">My Projects</h2>
+          	<h1 class="big big-2">Portfolio</h1>
+            <h2 class="mb-4">My Portfolio</h2>
             <p>Have a peek :)</p>
           </div>
         </div>
@@ -525,6 +454,7 @@
 					</div>
 				</div>
 
+                  
 				<div class="project img ftco-animate d-flex justify-content-center align-items-center col-md-6" style="background-image: url(images/antivirl.gif);"><a href="projects/antivirl.html" target="_blank">
 					<div class="overlay"></div>
 					<div class="text text-center p-4">
@@ -694,7 +624,7 @@ alert("send");
 			<p class="signature">
 				<ul>
 					<h1 class="mb-4 mt-3"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M512 1024q-139 0-257-68.5T68.5 769T0 512t68.5-257T255 68.5T512 0t257 68.5T955.5 255t68.5 257t-68.5 257T769 955.5T512 1024zm0-896q-104 0-192.5 51.5t-140 140T128 512t51.5 192.5t140 140T512 896t192.5-51.5t140-140T896 512t-51.5-192.5t-140-140T512 128zm222 304q-6 21-23 34.5T672 480q-8 0-16-3t-13-6t-11.5-10t-9-10t-7-10.5t-5.5-8.5q-39-48-98-48q-53 0-90.5 37.5T384 512t37.5 90.5T512 640q59 0 98-48q2-2 9.5-13.5t12.5-17t16-11.5t24-6q22 0 39 13.5t23 34.5q1 4 2 11t-3.5 23.5T714 656q-37 50-90 81t-112 31q-106 0-181-75t-75-181t75-181t181-75q61 0 114.5 31.5T717 371q12 11 16 26.5t2 25.5z"fill="#ffbd39"/></svg>
-							 2020 | Adhiraj Bhagawati<br>
+							 2021 | Adhiraj Bhagawati<br>
 							 Made With <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="0.86em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 416 488"><path d="M334 2q-44-1-69 12q-32 16-56 72q-1-3-4-7q-11-20-17-29t-16.5-20T148 13Q118-2 75 4Q17 18 8 82q-11 41 23 92q24 37 28 43q7 10 35.5 47t38.5 52q49 77 61 107q1 2 7.5 19.5T209 462q20-88 118-204q114-131 73-205q-17-38-66-51z" fill="#00FFFF"/></svg>
 							</div></span></h1>
 				</ul>
@@ -726,6 +656,6 @@ alert("send");
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
-  </body>
+</body>  
+</body>
 </html>
